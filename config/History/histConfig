@@ -1,0 +1,27 @@
+ 1510  git clone git@gitlab2.hk01.deepsky.local:thomas.loiodice/config_thomas.git
+ 1511  cd config_thomas
+ 1512  touch README.md
+ 1513  git add README.md
+ 1514  git commit -m "add README"
+ 1515  git push -u origin master
+ 1516  git config --global user.name "Thomas Loiodice"
+ 1517  git config --global user.email "thomas.loiodice@deepskycorp.com"
+ 1530  cd config_thomas/
+ 1537  mkdir config
+ 1538  mv ../.bashrc config/
+ 1539  mv ../.vimrc config/
+ 1540  mv ../.gitconfig config/
+ 1541  mv ../bin config/
+ 1542  mkdir link
+ 1543  cd link/
+ 1570  ln -s ~/config_thomas/config/.vimrc .vimrc
+ 1571  ln -s ~/config_thomas/config/.bashrc .bashrc
+ 1572  ln -s ~/config_thomas/config/.gitconfig .gitconfig
+ 1573  ln -s ~/config_thomas/config/bin bin
+ 1576  cp -ai ./* ~
+ 1577  cp -ai ./.[a-z]* ~
+#Better
+  1601  cp -ai ./{\.[a-z],*}* ~
+  1623  git add -p
+  1623  export export SIMPLE_BACKUP_SUFFIX=t
+  1601  cp -abi ./{\.[a-z],*}* ~

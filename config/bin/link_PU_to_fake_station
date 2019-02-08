@@ -1,0 +1,10 @@
+
+#fake modules with same arborecence
+#cp station, robot + change Box
+#ln partition, ui_pyscript, process_units, tools
+
+ln -s ../color_shift_station/ui_pyscript.py ui_pyscript.py
+
+cd process_units
+for l in  ../../color_shift_station/process_units/color_shift/*;do echo "ln -s ../$l color_shift/${l##*/}";ln -s ../$l  color_shift/${l##*/};  done
+

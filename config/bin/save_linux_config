@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo cp /etc/apt/sources.list ~/config_thomas/save_info/
+
+sudo dpkg --get-selections > ~/config_thomas/save_info/installed_pkg
+
+dconf dump / > save.conf
+dconf load / < saved.conf
+
+#export firefox bookmarks

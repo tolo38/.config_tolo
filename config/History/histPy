@@ -1,0 +1,902 @@
+    1  vim
+    2  vim etc/apt/sources.list
+    3  vim /etc/apt/sources.list
+    4  vim .bashrc 
+    5  vim /etc/nsswitch.conf 
+    6  sudo gedit /etc/nsswitch.conf 
+    7  sudo apt-get install git
+    8  sudo apt-get install curl
+    9  ssh-keygen -t rsa -C "thomas.loiodice@deepskycorp.com"
+   10  cat ~/.ssh/id_rsa.pub
+   11  mkdir dev
+   12  cd dev/
+   13  ls
+   14  git clone http://gitlab.paris.deepskycorp.com:8081/quentin.chateau/robotic-framework.git
+   15  git clone ssh://git@gitlab.paris.deepskycorp.com:2224/quentin.chateau/robotic-framework.git
+   16  ls
+   17  cd robotic-framework/
+   18  git checkout asteroid-dev
+   19  git pull
+   20  ./scripts/installDependencies.py -y --add-repo --version asteroid/dev
+   21  sudo apt update
+   22  sudo apt upgrade
+   23  cd /dev/robotic-framework
+   24  ./scripts/installDependencies.py -y --add-repo --version asteroid/dev
+   25  catkin_make
+   26  sudo apt install catkin
+   27  catkin_make
+   28  sudo apt install python-catkin-pkg 
+   29  pip install catkin 
+   30  sudo apt install python-pip
+   31  pip install catkin
+   32  pip install catkin_pkg
+   33  catkin_make
+   34  cd /home/deepsky/dev/robotic-framework/build/CMakeFiles/
+   35  pip3 install catkin_pkg
+   36  catkin_make
+   37  source /opt/python3-deepsky/bin/activate
+   38  source /opt/ros/deepsky/setup.bash
+   39  source /home/deepsky/dev/robotic-framework/devel/setup.sh
+   40  catkin_make
+   41  ./scripts/setcap.sh
+   42  ls
+   43  cd scripts/
+   44  ls
+   45  ./generateDoc.sh 
+   46  sudo apt install doxygen
+   47  ./generateDoc.sh 
+   48  ifconfig 
+   49  \
+   50  ifconfig 
+   51  vi /etc/hosts
+   52  cat .ssh/id_rsa.pub 
+   53  cd dev/
+   54  git clone git@gitlab.hk01.deepsky.local:lucas.zamuner/cds.git
+   55  cd cds/
+   56  ls
+   57  cat README.md 
+   58  sudo apt install docker-ce=17.12.1~ce-0~ubuntu
+   59  sudp python3
+   60  sudo python3
+   61  python3
+   62  sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+   63  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   64  sudo apt-key fingerprint 0EBFCD88
+   65  sudo apt-get update
+   66  sudo apt install docker-ce=17.12.1~ce-0~ubuntu
+   67  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   68     $(lsb_release -cs) \
+   69     stable"
+   70  sudo apt-get update
+   71  sudo apt install docker-ce=17.12.1~ce-0~ubuntu
+   72  sudo apt-mark hold docker-ce
+   73  $ sudo docker run hello-world
+   74  sudo docker run hello-world
+   75  ls
+   76  python run_all.py
+   77  cat run_all.py 
+   78  python run_all.py 255.255.0.0 255.255.0.1 LDS_test
+   79  python run_all.py --cds_ip 255.255.0.0 --lds_ip 255.255.0.1 --lds_name LDS_test
+   80  ls
+   81  ll
+   82  less requirements.txt 
+   83  vim /etc/hosts
+   84  sudo vim /etc/hosts
+   85  export ROS_HOSTNAME=localhost
+   86  rosrun drf_launch cds_launcher.py --ip 127.0.0.1 test
+   87  ls
+   88  ./run_all.py --hrlp
+   89  ./run_all.py --help
+   90  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+   91  apt-get install docker-compose 
+   92  sudo apt-get install docker-compose 
+   93  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+   94  cat README.md 
+   95  git status 
+   96  git checkout asteroid-dev
+   97  git pull
+   98  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+   99  docker list
+  100  docker --help
+  101  docker info
+  102  sudo groupadd docker
+  103  sudo usermod -aG docker $USER
+  104  cd .deepsky/
+  105  ls
+  106  cd ssl/
+  107  ls
+  108  cd ../../dev/
+  109  git clone git@gitlab.hk01.deepsky.local:lucas.zamuner/robotic-stations.git
+  110  docker run hello-world
+  111  sudo systemctl enable docker
+  112  ls
+  113  cd dev/cds/
+  114  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  115  cd dev/robotic-framework/
+  116  ./scripts/make_doc.py 
+  117  vi ~/.bashrc 
+  118  cd 
+  119  cat /etc/hosts
+  120  vim /etc/hosts
+  121  sudovim /etc/hosts
+  122  sudo vim /etc/hosts
+  123  vi ~/.bashrc 
+  124  sudo vim /etc/hosts
+  125  ps -aL
+  126  ps -auL
+  127  ps -alL
+  128  ps -aux
+  129  top
+  130  kill -9 -1
+  131  cd dev/cds/
+  132  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  133  sudo vim /etc/hosts
+  134  cat README.md 
+  135  docker stop $(docker ps  -a -q) -t 1
+  136  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  137  docker stop $(docker ps  -a -q) -t 1
+  138  history 
+  139  docker run hello-world
+  140  sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  141  sudo chmod +x /usr/local/bin/docker-compose
+  142  sudo vim /etc/hosts
+  143  sudo chmod +x /usr/local/bin/docker-compose
+  144  sudo vim /etc/hosts
+  145  sudo chmod +x /usr/local/bin/docker-compose
+  146  sudo vim /etc/hosts
+  147  sudo vim /etc/hostname 
+  148  sudo chmod +x /usr/local/bin/docker-compose
+  149  cat /etc/hostname 
+  150  cat /etc/hosts
+  151  grep -R deepsky-Z170X-UD5-TH
+  152  cd dev/cds
+  153  git status 
+  154  sudo apt-mark hold docker-ce
+  155  docker version 
+  156  dpkg --get-selections | grep docker-ce
+  157  docker exec -it cds-hk-dev_web_1 bash
+  158  cat /etc/apt/sources.list
+  159  ls
+  160  ls static/
+  161  cat requirements.txt 
+  162  vim cds/settings.py 
+  163  docker-compose stop
+  164  docker stop $(docker ps  -a -q) -t 1
+  165  vim cds/settings.py 
+  166  cd ../robotic-framework/
+  167  ./scripts/installDependencies.py 
+  168  ls
+  169  cat README 
+  170  ls /opt/etherlab/
+  171  ls /opt/etherlab/bin/
+  172  ls /opt/etherlab/etc/
+  173  ls /opt/etherlab/etc/init.d/
+  174  ls /opt/etherlab/sbin/
+  175  ls /opt/
+  176  ls /opt/
+  177  cat README 
+  178  ./scripts/make_doc.py 
+  179  nautilus .
+  180  sudo /usr/share/drf-deps/etherlab/install.py
+  181  sudo service ethercat stop
+  182  sudo vim /etc/default/grub 
+  183  sudo gedit /etc/default/grub 
+  184  cd dev/cds/
+  185  less README.md 
+  186  ifconfig 
+  187  vim /etc/sysconfig/ethercat
+  188  sudo vim /etc/sysconfig/ethercat
+  189  $ service ethercat start
+  190  service ethercat start
+  191  sudo /etc/init.d/ethercat start
+  192  service ethercat stop
+  193  sudo /etc/init.d/ethercat start
+  194  service ethercat start
+  195  ifconfig / grep "enx"
+  196  ifconfig | grep "enx"
+  197  sudo vim /etc/sysconfig/ethercat
+  198  service ethercat start
+  199  sudo vim /etc/sysconfig/ethercat
+  200  sudo /etc/init.d/ethercat start
+  201  sudo vim /etc/sysconfig/ethercat
+  202  sudo /etc/init.d/ethercat start
+  203  sudo /etc/init.d/ethercat restart
+  204  ifconfig | grep 9c-eb-e8-06-53-23
+  205  ifconfig | grep 9c:eb:e8:06:53:23
+  206  ifconfig
+  207  ifconfig | grep 9c:eb:e8:06:53:23
+  208  sudo /etc/init.d/ethercat start
+  209  vim /opt/etherlab/etc/sysconfig/ethercat
+  210  sudo vim /etc/sysconfig/ethercat
+  211  ifconfig
+  212  sudo vim /etc/sysconfig/ethercat
+  213  sudo /etc/init.d/ethercat start
+  214  uname -a
+  215  sudo /etc/init.d/ethercat start
+  216  sudo apt install linux-headers-4.15.0-32-lowlatency linux-image-4.15.0-32-lowlatency
+  217  cat /boot/grub/grub.cfg | grep adv
+  218  sudo update-grub2 
+  219  reboot
+  220  dmesg -wH
+  221  clear
+  222  cat /etc/hostname 
+  223  sudo chmod +x /usr/local/bin/docker-compose
+  224  cd dev/cds
+  225  cds-start
+  226  cds_start
+  227  docker stop $(docker ps  -a -q) -t 1
+  228  cat README.md 
+  229  rm -r video/migrations robotics/migrations common/migrations
+  230  rm -r robotics/migrations common/migrations
+  231  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  232  docker-compose --version
+  233  docker rmi $(docker images -a -q) -f
+  234  docker rm $(docker ps -a -q)
+  235  docker rmi $(docker images -a -q) -f
+  236  uname -a
+  237  sudo service ethercat start
+  238  systemctl status ethercat.service
+  239  sudo /usr/share/drf-deps/etherlab/install.py
+  240  sudo service ethercat start
+  241  dmesg
+  242  sudo vim /etc/sysconfig/ethercat 
+  243  sudo service ethercat start
+  244  ip
+  245  ip addr 
+  246  dmesg
+  247  ip adrr
+  248  ip addr
+  249  sudo service ethercat restart
+  250  cd ~/dev/cds/
+  251  cds_start
+  252  docker stop $(docker ps  -a -q) -t 1
+  253  history
+  254  ip addr | grep en
+  255  ip addr -v | grep en
+  256  ifconfig | grep en
+  257  /opt/etherlab/bin/ethercat master
+  258  /opt/etherlab/bin/ethercat slaves
+  259  /opt/etherlab/bin/ethercat 
+  260  /opt/etherlab/bin/ethercat -m 0 cstruct
+  261  /opt/etherlab/bin/ethercat slaves
+  262  rosrun drf_seeder seed-framework.py 
+  263  rosrun drf_seeder seed-framework.py -h
+  264  rosrun drf_seeder seed-framework.py --cds cds-hk-dev
+  265  cd dev/robotic-framework/
+  266  rosrun drf_seeder seed-framework.py --cds cds-hk-dev
+  267  cd dev/robotic-framework/
+  268  rosrun drf_seeder seed-framework.py 
+  269  docker logs -f ldsdev000_beat_1 
+  270  git stauats
+  271  git status
+  272  cd dev/cds/
+  273  git log 
+  274  cat /etc/hosts
+  275  ifconfig 
+  276  ping 192.168.13.1
+  277  ping 10.11.7.34
+  278  ping 10.11.7.35
+  279  sudo vim /etc/hosts
+  280  ping cds-hk-dev
+  281  history 
+  282  cd dev/cds/
+  283  vim cds/settings.py 
+  284  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  285  docker stop $(docker ps  -a -q) -t 1
+  286  docker rm $(docker ps -a -q)
+  287  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  288  docker stop $(docker ps  -a -q) -t 1
+  289  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  290  docker stop $(docker ps  -a -q) -t 1
+  291  git diff
+  292  git status 
+  293  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  294  docker stop $(docker ps  -a -q) -t 1
+  295  ./run_all.py --cds_ip 192.168.13.70 --lds_ip 192.168.13.71 --interface docker0 --lds_name ldsdev000
+  296  docker stop $(docker ps  -a -q) -t 1
+  297  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface docker0 --lds_name ldsdev000
+  298  docker stop $(docker ps  -a -q) -t 1
+  299  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface docker0 --lds_name ldsdev000 build
+  300  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface docker0 --lds_name ldsdev000 --rebuild
+  301  ping 8.8.8.8
+  302  ping 10.11.7.7
+  303  route  -n
+  304  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  305  reboot
+  306  history > hist1
+  307  less hist1 
+  308  vim .bashrc 
+  309  brc
+  310  docker stop $(docker ps  -a -q) -t 1
+  311  docker logs ldsdev000_worker_1 
+  312  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --no-lds
+  313  docker ps
+  314  docker start -ai 
+  315  docker start -ai ldsdev000_beat_1
+  316  docker exec ldsdev000_beat_1 -it  bash
+  317  docker exec  -it  bash ldsdev000_beat_1
+  318  docker exec  -it  ldsdev000_beat_1 bash
+  319  docker exec -it ldsdev000_beat_1 bash
+  320  cd ../robotic-framework/
+  321  rosrun drf_seeder seed-framework.py 
+  322  rosrun drf_seeder seed-framework.py -h
+  323  rosrun drf_seeder seed-framework.py --cds ldsdev000
+  324  ssh deepsky@10.11.7.151
+  325  talk ojeme@10.11.7.151
+  326  write ojeme
+  327  git stauts
+  328  git status
+  329  git diff
+  330  git status
+  331  git checkout  cds/celeryconf.py common/tasks.py run_beat.sh run_celery.sh 
+  332  exit
+  333  docker exec -it cds-hk-dev_beat_1 bash
+  334  exit
+  335  cd dev/cds
+  336  git diff
+  337  docker start -ai ldsdev000_beat_1
+  338  exit
+  339  docker start -ai ldsdev000_beat_1
+  340  docker start -ai cds_hk_dev_beat_1
+  341  docker start -ai cds-hk-dev_beat_1
+  342  docker exec -it cds-hk-dev_beat_1 bash
+  343  docker exec -it ldsdev000_beat_1 bash
+  344  docker start -ai ldsdev000_beat_1
+  345  exit
+  346  ls
+  347  cd dev/
+  348  cd cds
+  349  ls
+  350  cat .git/config 
+  351  flycap
+  352  flycap&
+  353  nmap
+  354  sudo apt install nmap
+  355  nmap
+  356  flycap&
+  357  ifconig
+  358  ifconfig
+  359  ifconfig
+  360  nmap lo
+  361  nmap enx9cebe8065323
+  362  nmap -iL enx9cebe8065323
+  363  nmap -iL linux0
+  364  nmap linux0
+  365  nmap 5544/tcp
+  366  nmap 5544
+  367  nmap -sL
+  368  nmap -sL linux0
+  369  nmap -sL linux0nmap -v -A targethost
+  370  map -v -A targethost
+  371  nmap -v -A targethost
+  372  arp
+  373  arp enx9cebe8065323
+  374  nmap -sP 10.11.0.0/24
+  375  arp -an
+  376  arp 9c:eb:e8:06:53:23
+  377  nmap 127.0.0.1
+  378  nmap 127.0.0.1:631
+  379  nmap 631
+  380  port 631
+  381  nmap 80
+  382  nmap --help
+  383  nmap -p 631
+  384  nmap 127.0.0.1 -p 631
+  385  nmap 127.0.0.1 -p 80
+  386  nmap -sn 127.0.0.1
+  387  nmap -v -sn 127.0.0.1
+  388  nmap -v 127.0.0.1
+  389  nmap -v -A 127.0.0.1
+  390  nmap -sO
+  391  nmap -sO 127.0.0.1
+  392  sudo nmap -sO 127.0.0.1
+  393  sudo nmap -sO -sL
+  394  nmap -sL
+  395  nmap -sL 127.0.0.1
+  396  nmap -sL 127.0.0.0/24
+  397  nmap -sL 10.11.0.0/24
+  398  nmap
+  399  ifconfig
+  400  cd dev/robotic-framework/
+  401  cat README 
+  402  ls
+  403  /opt/etherlab/bin/ethercat slaves
+  404  mkdir bin
+  405  cd bin/
+  406  vim cds_start
+  407  chmod u+x cds_start 
+  408  ll
+  409  vim hist1 
+  410  history > hist2
+  411  /opt/etherlab/bin/ethercat slaves
+  412  cd dev/robotic-framework/
+  413  ls
+  414  ls scripts/
+  415  rosrun drf_launch cds_launcher.py 
+  416  rosrun drf_launch cds_launcher.py test_linux0
+  417  brc
+  418  rosrun drf_launch cds_launcher.py test_linux0
+  419  /opt/etherlab/bin/ethercat slaves
+  420  rosrun drf_launch cds_launcher.py test_linux0
+  421  cd dev/cds
+  422  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  423  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  424  docker stop $(docker ps  -a -q) -t 1
+  425  vim Dockerfile 
+  426  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  427  vim Dockerfile 
+  428  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  429  docker ps
+  430  git status
+  431  git checkout Dockerfile
+  432  docker images
+  433  dokcer image rm 9c1ec5a053fc
+  434  docker image rm 9c1ec5a053fc
+  435  docker image rm -f 9c1ec5a053fc
+  436  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  437  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  438  cat README.md 
+  439  docker stop $(docker ps  -a -q) -t 1
+  440  docker rmi $(docker images -a -q) -f
+  441  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  442  docker stop $(docker ps  -a -q) -t 1
+  443  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  444  docker stop $(docker ps  -a -q) -t 1
+  445  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  446  docker stop $(docker ps  -a -q) -t 1
+  447  ping 10.11.7.34
+  448  ping 10.11.7.35
+  449  ifconfig 
+  450  ./run_all.py -h
+  451  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --cds_name cds-hk-dev
+  452  docker stop $(docker ps  -a -q) -t 1
+  453  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --no-cds
+  454  docker stop $(docker ps  -a -q) -t 1
+  455  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --no-cds
+  456  docker stop $(docker ps  -a -q) -t 1
+  457  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --no-cds
+  458  docker stop $(docker ps  -a -q) -t 1
+  459  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  460  docker stop $(docker ps  -a -q) -t 1
+  461  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  462  docker stop $(docker ps  -a -q) -t 1
+  463  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  464  docker stop $(docker ps  -a -q) -t 1
+  465  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  466  docker stop $(docker ps  -a -q) -t 1
+  467  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  468  docker stop $(docker ps  -a -q) -t 1
+  469  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  470  docker stop $(docker ps  -a -q) -t 1
+  471  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  472  docker stop $(docker ps  -a -q) -t 1
+  473  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  474  docker stop $(docker ps  -a -q) -t 1
+  475  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  476  gi
+  477  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 
+  478  cat /etc/udev/rules.d/99-EtherCAT.rules 
+  479  sudo /etc/init.d/ethercat start
+  480  cat ./src/drf_launch/python/launcher.py 
+  481  cat ./src/drf_launch/python/cds_launcher.py 
+  482  cds_start
+  483  cd ../cds
+  484  cds_start
+  485  docker stop $(docker ps  -a -q) -t 1
+  486  history
+  487  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  488  docker stop $(docker ps  -a -q) -t 1
+  489  ifconfig 
+  490  sudo snap install pycharm-community 
+  491  sudo snap install pycharm-community --classic
+  492  exit
+  493  cat /etc/network/interfaces
+  494  drf_code diff
+  495  drf-code diff
+  496  source ~/dev/robotic-framework/scripts/source_rob.sh
+  497  drf-code diff
+  498  drf-code upload -a
+  499  screen
+  500  flycap&
+  501  cd ../robotic-framework/
+  502  rosrun drf_launch cds_launcher.py --ip 127.0.0.1 test
+  503  rosrun drf_launch cds_launcher.py
+  504  rosrun drf_launch cds_launcher.py linux0
+  505  rosrun drf_launch cds_launcher.py test_linux0
+  506  sudo iwlist linux0 scan
+  507  sudo iwlist enp0s31f6 scan
+  508  sudo systemctl restart NetworkManager
+  509  rosrun drf_launch cds_launcher.py test_linux0
+  510  sudo systemctl restart NetworkManager
+  511  ifconfig 
+  512  rosrun drf_launch cds_launcher.py test_linux0
+  513  ifconfig
+  514  sudo ifconfig enp0s31f6 mtu 9000
+  515  ifconfig
+  516  flycap
+  517  sudo service ethercat restart
+  518  flycap
+  519  top
+  520  /opt/etherlab/bin/ethercat slaves
+  521  cd /opt/etherlab/bin/
+  522  ls
+  523  ethtool 
+  524  ./ethercat slaves
+  525  sudo /etc/init.d/ethercat start
+  526  ./ethercat slaves
+  527  flycap
+  528  flycap&
+  529  ifconfig
+  530  flycap&
+  531  sudo /etc/init.d/ethercat start
+  532  flycap&
+  533  ping 10.11.7.165
+  534  flycap&
+  535  flycap
+  536  sudo service network-manager restart
+  537  flycap
+  538  sudo service network-manager restart
+  539  flycap
+  540  cd /
+  541  ls
+  542  cd home/
+  543  ls
+  544  cd deepsky/
+  545  ls
+  546  sudo apt install gimp
+  547  nom
+  548  nmon
+  549  sudo apt install nmon
+  550  nmon
+  551  vim rosrun.sh
+  552  ls
+  553  chmod u+x rosrun.sh 
+  554  ./rosrun.sh 
+  555  grep -R from_client_file
+  556  grep -R builder
+  557  grep -iR *builder
+  558  grep -iR "*builder"
+  559  ping 10.11.7.167
+  560  python
+  561  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  562  cds_start
+  563  ./~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  564  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  565  vim bin/cds_start 
+  566  cds_start
+  567  cd dev/cds
+  568  cds_start
+  569  docker stop $(docker ps  -a -q) -t 1
+  570  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  571  docker stop $(docker ps  -a -q) -t 1
+  572  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  573  docker stop $(docker ps  -a -q) -t 1
+  574  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  575  docker stop $(docker ps  -a -q) -t 1
+  576  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  577  docker stop $(docker ps  -a -q) -t 1
+  578  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  579  docker stop $(docker ps  -a -q) -t 1
+  580  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  581  cds_start 
+  582  docker stop $(docker ps  -a -q) -t 1
+  583  cds_start 
+  584  docker stop $(docker ps  -a -q) -t 1
+  585  cds_start 
+  586  docker stop $(docker ps  -a -q) -t 1
+  587  cds_start 
+  588  docker stop $(docker ps  -a -q) -t 1
+  589  cds_start 
+  590  docker stop $(docker ps  -a -q) -t 1
+  591  ls
+  592  cd
+  593  cd bin/
+  594  ls
+  595  vim cds_stop
+  596  vim cds_start 
+  597  ifconfig
+  598  flycap
+  599  ping 10.11.7.163
+  600  source ~/dev/robotic-framework/scripts/source_rob.sh
+  601  drf-code upload -a
+  602  drf-code download -a
+  603  drf-code download --modules
+  604  drf-code diff
+  605  drf-code upload -a
+  606  drf-code download -a
+  607  drf-code upload -a
+  608  drf-code download -a
+  609  drf-code upload -a
+  610  drf-code download -a
+  611  drf-code upload -a
+  612  drf-code diff
+  613  drf-code upload -a
+  614  drf-code download -a
+  615  drf-code upload -a
+  616  drf-code download -a
+  617  drf-code upload -a
+  618  drf-code download -a
+  619  drf-code upload -a
+  620  drf-code diff
+  621  drf-code upload -a
+  622  drf-code diff
+  623  drf-code upload -a
+  624  drf-code download -a
+  625  drf-code diff
+  626  drf-code upload -a
+  627  drf-code diff
+  628  drf-code upload -a
+  629  drf-code diff
+  630  drf-code download -a
+  631  drf-code diff
+  632  drf-code upload -a
+  633  drf-code download -modules
+  634  drf-code download --modules
+  635  drf-code upload -a
+  636  drf-code download --modules
+  637  drf-code upload -a
+  638  xs, ys = np.meshgrid(np.arange(0.035, 0.09, 0.015), np.arange(0.025, 0.10, 0.02))
+  639  xs = xs.reshape((16,))
+  640  ys = ys.reshape((16,))
+  641  drf-code upload -a
+  642  cd robotic-framework/
+  643  git gui
+  644  sudo apt install git-gui
+  645  git gui
+  646  git clone git@gitlab2.hk01.deepsky.local:adam.fourure/cut_station.git
+  647  git clone git@gitlab2.hk01.deepsky.local:adam.fourure/calis.git
+  648  git clone git@gitlab2.hk01.deepsky.local:adam.fourure/printer_station.git
+  649  git clone git@gitlab2.hk01.deepsky.local:mathieu.guillaume/station_mab.git
+  650  git clone git@gitlab2.hk01.deepsky.local:tonny.scheuring/matte_station.git
+  651  cd ssh
+  652  cd .ssh
+  653  cat id
+  654  cat id_rsa.pub 
+  655  cd ../dev/project/
+  656  ls
+  657  cd ..
+  658  ls
+  659  mkdir hk-stations
+  660  cd hk-stations/
+  661  ls
+  662  fg
+  663  screen
+  664  sudo apt install screen
+  665  screen
+  666  cd dev
+  667  mkdir project
+  668  cd project/
+  669  cd >>
+  670  cd ..
+  671  ls
+  672  cd project/
+  673  ls
+  674  mkdir cam_shoot
+  675  cd cam_shoot/
+  676  ls
+  677  source ~/dev/robotic-framework/scripts/source_rob.sh
+  678  sudo activate-global-python-argcomplete
+  679  sudo apt install activate-global-python-argcomplete
+  680  sudo apt install python-argcomplete
+  681  sudo activate-global-python-argcomplete
+  682  source ~/dev/robotic-framework/scripts/source_rob.sh
+  683  drf-code init test_linux0 --cds cds-hk-dev --lds ldsdev000 
+  684  ls
+  685  drf-code download -a
+  686  drf-code download --shared_files
+  687  drf-code download --all --shared_files
+  688  drf-code diff
+  689  ls
+  690  drf-code download -a
+  691  drf-code diff
+  692  drf-code upload -a
+  693  drf-code diff
+  694  sudo apt install redshift
+  695  cd bin/
+  696  ls
+  697  chmod cds_stop u+x
+  698  ll
+  699  chmod cds_stop u+x
+  700  chmod u+x cds_stop 
+  701  ll
+  702  rosrun drf_launch cds_launcher.py test_linux0
+  703  cd bin/
+  704  vim ros
+  705  mv ros drf_launch_linux0
+  706  chmod 700 drf_launch_linux0 
+  707  ll
+  708  chmod 711 drf_launch_linux0 
+  709  ll
+  710  chmod 733 drf_launch_linux0 
+  711  ll
+  712  chmod 733 drf_launch_linux0 
+  713  chmod 766 drf_launch_linux0 
+  714  ll
+  715  chmod 744 drf_launch_linux0 
+  716  ll
+  717  ps
+  718  sudo update-alternatives --config x-terminal-emulator
+  719  ifconfig 
+  720  vim /etc/hosts
+  721  less hist
+  722  less hist1 
+  723  vim bin/cds_start 
+  724  sudo vim /etc/sysconfig/ethercat
+  725  sudo service ethercat start
+  726  sudo /etc/init.d/ethercat start
+  727  history > hist3
+  728  vim hist3
+  729  less bin/drf_launch_linux0 
+  730  flycap
+  731  ifconfig 
+  732  flycap&
+  733  ifconfig 
+  734  flycap&
+  735  vim /etc/hosts
+  736  drf_launch_linux0 
+  737  sudo service ethercat start
+  738  sudo service ethercat stop
+  739  sudo service ethercat start
+  740  drf_launch_linux0 
+  741  gedit .ros/log/49dfbd66-e669-11e8-8d84-38d547185cea/roslaunch-linux0-27336.log
+  742  drf_launch_linux0 
+  743  cd /opt/etherlab/bin/
+  744  ./ethercat slaves
+  745  /opt/etherlab/bin/ethercat slaves
+  746  /opt/etherlab/bin/ethercat start
+  747  sudo /etc/init.d/ethercat start
+  748  /opt/etherlab/bin/ethercat slaves
+  749  sudo /usr/share/drf-deps/etherlab/install.py
+  750  sudo vim /etc/sysconfig/ethercat
+  751  sudo /etc/init.d/ethercat start
+  752  /opt/etherlab/bin/ethercat slaves
+  753  sudo gedit /etc/sysconfig/ethercat
+  754  sudo /etc/init.d/ethercat start
+  755  /opt/etherlab/bin/ethercat slaves
+  756  sudo gedit /etc/sysconfig/ethercat
+  757  sudo /etc/init.d/ethercat start
+  758  /opt/etherlab/bin/ethercat slaves
+  759  sudo vim /etc/sysconfig/ethercat
+  760  cds_start 
+  761  cds_stop
+  762  cds_start 
+  763  cds_stop
+  764  cds_start 
+  765  cds_stop
+  766  cds_start 
+  767  cds_stop
+  768  cds_start 
+  769  cds_stop
+  770  cds_start 
+  771  cds_stop
+  772  cds_start 
+  773  cds_stop
+  774  cds_start 
+  775  cds_stop
+  776  ifconfig
+  777  ping 127.0.0.1
+  778  cd .config/
+  779  touch redshift.conf
+  780  gedit redshift.conf 
+  781  redshift 
+  782  sudo gedit /etc/network/interfaces
+  783  /etc/NetworkManager/NetworkManager.conf
+  784  sudo gedit /etc/NetworkManager/NetworkManager.conf
+  785  cds-start
+  786  cds-_start
+  787  cds_start
+  788  cds-_start
+  789  cds_stop
+  790  /opt/etherlab/bin/ethercat slaves
+  791  sudo /etc/init.d/ethercat start
+  792  /opt/etherlab/bin/ethercat slaves
+  793  cds_start 
+  794  cds_stop
+  795  cds_start 
+  796  cds_stop
+  797  cd dev/cds/
+  798  ls
+  799  cd ..
+  800  cd project/
+  801  ls
+  802  cd ..
+  803  ls
+  804  cd cds/
+  805  ls
+  806  cat README.md
+  807  vim hist2 
+  808  cat bin/cds_start 
+  809  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  810  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  811  cd dev/cds/
+  812  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  813  sudo service network-manager restart
+  814  drf_launch_linux0 
+  815  drf_launch_linux0 
+  816  sudo apt install dgl-logger
+  817  ping repository.hk01.deepsky.local
+  818  RUN curl -fsSL ftp://repository.hk01.deepsky.local/cert/gpg
+  819  curl -fsSL ftp://repository.hk01.deepsky.local/cert/gpg
+  820  ping repository.hk01.deepsky.local
+  821  sudo service network-manager restart
+  822  ping repository.hk01.deepsky.local
+  823  cd ..
+  824  gedit/etc/network/interfaces
+  825  gedit /etc/network/interfaces
+  826  gedit /etc/NetworkManager/NetworkManager.conf &
+  827  sudo gedit /etc/network/interfaces
+  828  sudo service network-manager restart
+  829  cd cds/
+  830  cd dev/cds/
+  831  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  832  curl -fsSL ftp://repository.hk01.deepsky.local/cert/gpg
+  833  ping repository.hk01.deepsky.local/
+  834  ping repository.hk01.deepsky.local
+  835  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000 --rebuild
+  836  ~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface enp0s31f6 --lds_name ldsdev000
+  837  cds_stop
+  838  ifconfig 
+  839  sudo /etc/init.d/ethercat start
+  840  sudo ifconfig enp0s31f6 mtu 9000
+  841  sudo ifconfig enx9cebe8065323 mtu 9000
+  842  ifconfig
+  843  vim bin/cds_start 
+  844  flycap
+  845  ping repository.hk01.deepsky.local
+  846  ping google.com
+  847  cds_start 
+  848  cds_stop
+  849  cds_start 
+  850  cds_stop
+  851  ifconfig
+  852  cds_start 
+  853  cds_stop
+  854  cds_start 
+  855  cds_stop
+  856  cd dev/cds/
+  857  ./run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface docker0 --lds_name ldsdev000
+  858  drf_launch_linux0 
+  859  sudo gedit /etc/network/interfaces
+  860  sudo service network-manager restart
+  861  drf_launch_linux0 
+  862  cat /etc/NetworkManager/NetworkManager.conf
+  863  ifconfig 
+  864  cat bin/cds_start 
+  865  drf_launch_linux0 
+  866  ping google.com
+  867  ping 127.0.0.1
+  868  ping google.com
+  869  sudo service network-manager restart
+  870  ping google.com
+  871  sudo /etc/init.d/ethercat start
+  872  drf_launch_linux0 
+  873  cds_start 
+  874  cds_stop
+  875  cat cds_start
+  876  cat bin/cds_start
+  877  sudo /etc/init.d/ethercat stop
+  878  cds_start 
+  879  sudo /etc/init.d/ethercat stop
+  880  cds_stop
+  881  ifconfig 
+  882  sudo ifconfig enx9cebe8065323 mtu 9000
+  883  ifconfig 
+  884  sudo ifconfig enx9cebe8065323 mtu 9000
+  885  drf_launch_linux0 
+  886  sudo /etc/init.d/ethercat stop
+  887  sudo /etc/init.d/ethercat start
+  888  drf_launch_linux0 
+  889  cds_start
+  890  cds_stop
+  891  cds_start
+  892  cds_stop
+  893  cds_start
+  894  flycap
+  895  sudo ifconfig enx9cebe8065323 mtu 9000
+  896  flycap
+  897  ifconfig
+  898  sudo ifconfig enp0s31f6 mtu 9000
+  899  source ~/dev/robotic-framework/scripts/source_rob.sh
+  900  drf-code download -a
+  901  drf-code upload -a
+  902  history > histPy

@@ -1,0 +1,28 @@
+{
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#5f0000",
+        "statusBar.noFolderBackground": "#5f0000",
+        "statusBar.debuggingBackground": "#5f0000"
+    },
+    "zenMode.hideStatusBar": false,
+    "vim.useCtrlKeys": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope":"string.quoted.docstring.multi.python",
+                "settings": {
+                    "foreground": "#4d8d53" //change to your preference
+                }
+            }
+        ]
+    },
+    "search.location": "panel",
+    "debug.location": "panel",
+    "editor.minimap.enabled": true,
+    "terminal.integrated.rendererType": "dom",
+}

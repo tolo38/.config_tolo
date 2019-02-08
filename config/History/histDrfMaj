@@ -1,0 +1,34 @@
+ 2018  cd dev/robotic-framework/
+ 2022  git pull
+ 2023  catkin_make
+ 2024  git branch
+ 2025  git checkout asteroid-edge
+ 2026  git pull
+ 2027  catkin_make
+ 2028  ls
+ 2029  source devel/setup.bash
+ 2033  cd ~/.deepsky/ssl
+ 2034  ls
+ 2035  cd -
+ 2036  ls
+ 2037  rosrun drf_seeder seed-framework.py
+ 2038  cd ../hk-stations/fake_station/
+ 2039  tree
+ 2040  cd ..
+ 2041  mkdir tmp
+ 2042  mv fake_station tmp/
+ 2043  cd tmp/
+ 2044  ls
+ 2045  cd fake_station/
+ 2046  tree
+ 2047  drf-code init
+ 2048  pip3 install jsonpatch
+ 2049  pip3 install termcolor
+ 2050  drf-code init
+ 2051  drf-code migrate 
+ 2052  cd ../..
+ 2053  mv tmp/fake_station .
+ 2054  ls
+ 2055  tree fake_station
+ 2056  rmdir tmp
+ 2057  history > ~/History/histDrfMaj

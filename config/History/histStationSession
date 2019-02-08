@@ -1,0 +1,6 @@
+cd dev/cds/
+~/dev/cds/run_all.py --cds_ip 10.11.7.34 --lds_ip 10.11.7.35 --interface docker0 --lds_name ldsdev000
+firefox https://cds-hk-dev/robotics/boxes/
+rosrun drf_launch cds_launcher.py test_linux0
+service ethercat start
+flycap

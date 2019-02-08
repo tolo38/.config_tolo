@@ -1,0 +1,14 @@
+ #install ethercat
+ sudo /usr/share/drf-deps/etherlab/install.py
+ #config
+ sudo vim /etc/sysconfig/ethercat
+ #test working on
+ 1178  /opt/etherlab/bin/ethercat mas
+ #set to working on
+ 1179  sudo service ethercat start
+ #check status
+ 1182  sudo service ethercat status
+ #check slaves
+ /opt/etherlab/bin$ ./ethercat slaves
+ #stop = working off
+ sudo /etc/init.d/ethercat stop
