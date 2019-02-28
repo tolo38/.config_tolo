@@ -116,12 +116,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# source drf python 3 virtual env 
 source /opt/python3-deepsky/bin/activate
-source /opt/ros/deepsky/setup.bash
-source /home/deepsky/dev/robotic-framework/devel/setup.sh
-
+#source /opt/ros/deepsky/setup.bash
+#source /home/deepsky/dev/robotic-framework/devel/setup.sh
 #################################################################
-source ~/dev/robotic-framework/scripts/source_rob.sh
+# source drf
+source /opt/drf/setup.sh
+#source /home/deepsky/dev/robotic-framework/scripts/source_rob.sh
+# drf code
+eval "$(register-python-argcomplete drf-code)"
+#################################################################
 
 ######################
 ####    Colors    ####

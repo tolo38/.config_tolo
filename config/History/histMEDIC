@@ -1,0 +1,7 @@
+
+#Install
+pip3 install --trusted-host pypi.hk01.deepsky.local --extra-index-url
+https://pypi.hk01.deepsky.local/deepsky/release deepsky-medic
+
+#use
+python -m ds_medic.medic

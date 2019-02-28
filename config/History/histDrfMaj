@@ -32,3 +32,74 @@
  2055  tree fake_station
  2056  rmdir tmp
  2057  history > ~/History/histDrfMaj
+
+ 1536  cd /opt/drf
+ 1537  ls
+ 1538  exit
+ 1539  sudo apt install robotic-framework
+ 1540  sudo apt install drf-code
+ 1541  sudo apt get upgrade
+ 1542  sudo apt-get upgrade
+ 1543  exit
+ 1544  gedit ~/.bashrc
+ 1545  exit
+ 1546  rosrun drf_launch launcher.py color_shift_station
+ 1547  vim CS2000_reference.txt 
+ 1548  rosrun drf_launch launcher.py color_shift_station
+ 1549  /usr/bin/python3.6
+ 1550  python
+ 1551  drf-code diff -a
+ 1552  drf-code upload --process-units 
+ 1553  drf-code schema update
+ 1554  drf-code migrate
+ 1555  source /opt/python3-deepsky/bin/activate
+ 1556  git status 
+ 1557  lg
+ 1558  git status 
+ 1559  git commit -a
+ 1560  git checkout master 
+ 1561  git status
+ 1562  git checkout -b update_1.2
+ 1563  source /opt/python3-deepsky/bin/activate
+ 1564  brc
+ 1565  drf-code schema update
+ 1566  drf-code migrate
+ 1567  drf-code schema update
+ 1568  drf-code migrate
+ 1569  vim /etc/apt/sources.list
+ 1570  sudo vim /etc/apt/sources.list
+ 1571  sudo apt update
+ 1572  sudo vim /etc/apt/sources.list
+ 1573  sudo vim /etc/apt/sources.list
+ 1574  sudo apt update
+ 1575  sudo vim /etc/apt/sources.list
+ 1576  sudo apt update
+ 1577  sudo apt install drf-code 
+ 1578  sudo setcap cap_net_raw,cap_sys_nice,cap_net_admin+eip /opt/drf/lib/drf_launch/deployer_node
+ 1579  exit
+ 1580  cd /opt/drf
+ 1581  ls
+ 1582  cd ..
+ 1583  ls
+ 1584  cd drf
+ 1585  ls
+ 1586  cd ssl
+ 1587  ls
+ 1588  cd ..
+ 1589  cd dev/robotic-framework/
+ 1590  git pull
+ 1591  catkin_make
+ 1592  git show remote origin
+ 1593  git remote show origin
+ 1594  brc
+ 1595  git remote show origin
+ 1596  brc
+ 1597  history >> History/histDrfMaj
+ 1598  vim History/histDrfMaj 
+ 1599  drf-code upload --all
+ 1600  drf-code upload --all -f
+ 1601  drf-code schema update
+ 1602  drf-code upload --modules
+ 1603  drf-code upload --modules -f
+ 1604  drf-code upload --all -f
+ 1605  history >> History/histDrfMaj

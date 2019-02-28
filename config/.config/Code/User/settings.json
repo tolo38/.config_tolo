@@ -25,4 +25,5 @@
     "debug.location": "panel",
     "editor.minimap.enabled": true,
     "terminal.integrated.rendererType": "dom",
+    "zenMode.hideTabs": false,
 }
