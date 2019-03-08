@@ -7,3 +7,5 @@ def bar():
     return False
 
 foo() and bar()  
+
+all(f() for f in [foo, bar])
