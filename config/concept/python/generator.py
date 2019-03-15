@@ -18,7 +18,7 @@ print("try : ")
 list_ = [1,2,3,4]
 g=True
 gen = (x for x in list_)
-i = 50 
+i = 50
 while g:
     g = next(gen, None)
     print(g)
@@ -30,4 +30,12 @@ while g:
     except IndexError:
         pass
 
+d = (i+1 for i in range(20))    #WARNING : if 0 -> Fales
+l = [5]                         #WARNING : if 0 -> Fales
+gen = (i for i in l)
+next_ = next(gen)
+while next_:
+    print(next_)
+    l.append(next(d,None))
+    next_ = next(gen,None)
 
