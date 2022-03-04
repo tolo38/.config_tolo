@@ -1,0 +1,18 @@
+for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ and /:/g"); do
+    echo ${files%:*} ${files#*:};
+done
+for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ and /:/g"); do
+        while true; do
+                echo
+                echo ${files%:*} ${files#*:};
+                read -p "Open - Pass - Quite (o/p/q)?" -n 1 -r
+                case "$REPLY" in
+                        o )
+                                vimdiff ${files%:*} ${files#*:}
+                                break;;
+                        p ) break;;
+                        q ) break 2;;
+                        * ) echo "invalid";;
+                esac
+        done
+done
