@@ -1,4 +1,4 @@
-!# /bin/bash
+#! /bin/bash
 for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ and /:/g"); do
     echo ${files%:*} ${files#*:};
 done
