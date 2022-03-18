@@ -163,6 +163,27 @@ bind 'set completion-ignore-case on'
 #Source Autocompletion script
 for f in ~/bin/bash.completion.d/*; do source $f; done
 
+#Copy to tmp
+function cptmp()
+{
+	orig=$1
+	dest="~/WORK/tmp/$2$1"
+	echo "mkdir -p $dest && cp -r $orig $dest"
+	mkdir -p "$dest"
+	cp -r $orig $dest
+}
+
+#Recursive grep
+function grepR()
+{
+	e=$1
+	shift
+	echo "grep . -r -e \"$e\" $@ -iIn --color=always -B 2 -A 2 --exclude *.cs --exclude *.cpp --exclude *.h |less -R"
+	grep . -r -e "$e" $@ -iIn --color=always -B 2 -A 2 --exclude *.cs --exclude *.cpp --exclude *.h |less -R
+}
+
+
+
 ######################
 ####    Alias     ####
 ######################
@@ -172,3 +193,5 @@ alias vrc="vim ~/.vimrc"
 alias ifl="ifconfig | less"
 alias lg='git log --all --decorate --oneline --graph'
 alias tconf='cd ~/.config_thomas'
+alias tree="tree.com"
+alias meld="/c/Program\ Files\ \(x86\)/Meld/Meld.exe -n"
