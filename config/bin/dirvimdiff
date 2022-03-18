@@ -1,7 +1,10 @@
 #! /bin/bash
+output=""
 for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ and /:/g"); do
-    echo ${files%:*} ${files#*:};
+    output="$output\n ${files%:*} \t ${files#*:}";
+    printf "%-80s %-80s\n" "${files%:*}" "${files#*:}";
 done
+echo -e $output | column -t
 for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ and /:/g"); do
         while true; do
                 echo
