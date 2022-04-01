@@ -20,3 +20,6 @@ for files in $(diff -rq $1 $2|grep 'differ$'|sed "s/^Files //g;s/ differ$//g;s/ 
                 esac
         done
 done
+
+#Next step 
+# - improve display : [dir print as tree](https://stackoverflow.com/questions/3455625/linux-command-to-print-directory-structure-in-the-form-of-a-tree)
