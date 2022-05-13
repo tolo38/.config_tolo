@@ -163,6 +163,19 @@ bind 'set completion-ignore-case on'
 #Source Autocompletion script
 for f in ~/bin/bash.completion.d/*; do source $f; done
 
+# wsl workarround to unify bashrc
+# Add following command to WSL .bachrc
+#
+# source /mnt/c/Users/...path to this .bashrc
+# brcA
+function brcA()
+{
+	unset -f brcA
+	path=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/.bashrc
+	alias brcA="vim $path && source $path"
+}
+
+
 #Copy to tmp
 function cptmp()
 {
@@ -183,6 +196,19 @@ function grepR()
 }
 
 
+function add_less(){ 
+	local l=$READLINE_LINE;
+	READLINE_LINE="$l | less";
+}
+bind -x '"\C-T\C-L": add_less'
+
+function path2slash(){
+	local l1=$READLINE_LINE;
+	local l2=$(sed 's/\\/\//g' <<< "$l1");
+	READLINE_LINE= "$l2";
+}
+bind -x '"\C-T\C-H": path2slash'
+
 
 ######################
 ####    Alias     ####
@@ -190,8 +216,10 @@ function grepR()
 alias brc="vim ~/.bashrc && source ~/.bashrc"
 alias bal="vim ~/.bash_aliases && source ~/.bashrc"
 alias vrc="vim ~/.vimrc"
+alias src="vim ~/bin/"
 alias ifl="ifconfig | less"
 alias lg='git log --all --decorate --oneline --graph'
+alias gs="git status"
 alias tconf='cd ~/.config_thomas'
 alias tree="tree.com"
 alias meld="/c/Program\ Files\ \(x86\)/Meld/Meld.exe -n"
